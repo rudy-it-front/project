@@ -1,0 +1,53 @@
+@import 'bootstrap/scss/bootstrap';
+
+.navbarTopStyle{
+  height: 100px;
+}
+
+.font-family-patua {
+  font-family: 'Lobster', sans-serif;
+}
+
+.custom-toggler {
+  background-color: white; /* Измените на нужный вам цвет */
+}
+
+.shop-cart-button{
+  cursor:pointer;
+  transition: color, transform, 500ms ease;
+}
+
+.shop-cart-button:hover,
+.shop-cart-button:active{
+  color: #dc3d3d;
+  transform: scale(1.5);
+}
+
+.linkRefBtn{
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+.linkMenuBtn{
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  border: 3px solid gray;
+  border-radius: 15%;
+}
+
+@media (min-width: 992px) {
+  /* Стили для больших экранов (без скролла) */
+  .nav-scroll {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Стили для меньших экранов (с горизонтальным скроллом) */
+  .nav-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
